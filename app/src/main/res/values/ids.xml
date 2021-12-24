@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="seekBar" type="id" />
+    <item name="tanggal" type="id" />
+    <item name="ratingvalue" type="id" />
+    <item name="nama" type="id" />
+    <item name="textnama" type="id" />
+    <item name="sinopsis" type="id" />
+    <item name="pemeran" type="id" />
+    <item name="horror" type="id" />
+    <item name="romance" type="id" />
+    <item name="action" type="id" />
+    <item name="fiction" type="id" />
+    <item name="comedy" type="id" />
+    <item name="mystery" type="id" />
+    <item name="pilihan" type="id" />
+    <item name="buku" type="id" />
+    <item name="komik" type="id" />
+    <item name="Novel" type="id" />
+    <item name="biografi" type="id" />
+    <item name="dongeng" type="id" />
+    <item name="majalah" type="id" />
+    <item name="Cergam" type="id" />
+    <item name="KaryaIlmiah" type="id" />
+    <item name="Ensiklopedi" type="id" />
+    <item name="kategori" type="id" />
+    <item name="rating" type="id" />
+    <item name="genre" type="id" />
+    <item name="penulis" type="id" />
+    <item name="namabuku" type="id" />
+    <item name="txUsername" type="id" />
+    <item name="txPassword" type="id" />
+    <item name="btnLogin" type="id" />
+    <item name="tvCreateAccount" type="id" />
+    <item name="txUsernameReg" type="id" />
+    <item name="txPasswordReg" type="id" />
+    <item name="txConPassword" type="id" />
+    <item name="btnRegister" type="id" />
+    <item name="tvRegister" type="id" />
+    <item name="namapenulis" type="id" />
+    <item name="tvback" type="id" />
+    <item name="tvbacklogin" type="id" />
+</resources>

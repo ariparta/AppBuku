@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AppBuku</string>
+
+    <!--Login String-->
+    <string name="str_welcome">Selamat Datang,</string>
+    <string name="str_welcome2">Di Aplikasi Informasi Buku</string>
+    <string name="str_title_login">LOGIN </string>
+    <string name="str_title_username">Username</string>
+    <string name="str_hint_username">Username</string>
+    <string name="str_title_password">Password</string>
+    <string name="str_hint_password">Password</string>
+    <string name="str_btn_login">Login</string>
+    <string name="str_kalimat_register">belum punya akun?</string>
+    <string name="str_register">Daftar Disini</string>
+    <string name="str_forgot_password">Anda lupa password?</string>
+    <string name="str_mark">PROGMOB 2021</string>
+
+    <!--Login Register-->
+    <string name="str_title_register_pemilik">PENDAFTARAN </string>
+    <string name="str_hint_reg_email">Email</string>
+    <string name="str_hint_reg_username">Username</string>
+    <string name="str_hint_reg_password">Password</string>
+    <string name="str_hint_reg_con_password">Confirm Password</string>
+    <string name="str_reg_gender">Jenis Kelamin</string>
+    <string name="str_gender_male">Pria</string>
+    <string name="str_gender_female">Wanita</string>
+    <string name="str_reg_age">Usia</string>
+    <string name="str_reg_year">tahun</string>
+    <string name="str_reg_term_and_condition">Setujui Syarat &amp; Ketentuan</string>
+    <string name="str_reg_term_and_condition2">Syarat &amp; Ketentuan</string>
+    <string name="str_btn_cancel">Batal</string>
+    <string name="str_btn_regist">Daftar</string>
+    <string name="str_btn_back_login">Sudah Memiliki Akun?</string>
+    <string name="str_btn_login_">Login Disini</string>
+</resources>

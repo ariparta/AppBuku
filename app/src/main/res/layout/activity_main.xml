@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="id.ari.appbuku.MainActivity"
+    android:background="@drawable/bg_2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/books"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/orkney_bold"
+            android:text="@string/str_welcome"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/orkney_light"
+            android:text="@string/str_welcome2"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="130dp"
+                android:layout_marginStart="20dp"
+
+
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textnama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/orkney_bold"
+                        android:text="Pilih Jenis Buku"
+                        android:textAlignment="center"
+                        android:textColor="@color/light_blue"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutpilihan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textnama"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp">
+
+                        <RadioGroup
+                            android:id="@+id/pilihan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/buku"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="40dp"
+                                android:buttonTint="@color/blue"
+                                android:text="Buku"
+                                android:textSize="14dp" />
+
+                            <RadioButton
+                                android:id="@+id/komik"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="50dp"
+                                android:buttonTint="@color/blue"
+                                android:text="Komik"
+                                android:textSize="14dp" />
+
+                            <RadioButton
+                                android:id="@+id/Novel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:buttonTint="@color/blue"
+                                android:text="Novel"
+                                android:textSize="14dp" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutpilihan"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginTop="-1dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/orkney_light"
+                        android:hint="Masukkan Nama Buku"
+                        android:inputType="text"
+                        android:orientation="horizontal"
+                        android:selectAllOnFocus="true"
+                        android:textColorHint="@color/black"
+                        android:textSize="16sp" />
+
+
+                    <EditText
+                        android:id="@+id/sinopsis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nama"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/orkney_light"
+                        android:hint="Masukkan Sinopsis Buku"
+                        android:inputType="text"
+                        android:textColorHint="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textgenre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nama"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="55dp"
+                        android:text="Genre"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/genre1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textgenre"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="16dp"
+                        android:weightSum="2">
+
+
+                        <CheckBox
+                            android:id="@+id/comedy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/blue"
+                            android:paddingLeft="5dp"
+                            android:text="Comedy"
+                            android:textSize="14sp" />
+
+                        <CheckBox
+                            android:id="@+id/horror"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/blue"
+                            android:paddingLeft="5dp"
+                            android:text="Horror"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/genre2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/genre1"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="-15dp"
+                        android:layout_marginEnd="16dp"
+                        android:buttonTint="@color/blue"
+                        android:weightSum="2">
+
+                        <CheckBox
+                            android:id="@+id/fiction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/blue"
+                            android:paddingLeft="5dp"
+                            android:text="Fiction"
+
+                            android:textSize="14sp" />
+
+                        <CheckBox
+                            android:id="@+id/action"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/blue"
+                            android:paddingLeft="5dp"
+                            android:text="Action"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/genre3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/genre2"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="-15dp"
+                        android:layout_marginRight="16dp"
+                        android:weightSum="2">
+
+                        <CheckBox
+                            android:id="@+id/romance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/blue"
+                            android:paddingStart="5dp"
+                            android:text="Romance"
+
+                            android:textSize="14sp" />
+
+
+                        <CheckBox
+                            android:id="@+id/mystery"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/blue"
+                            android:paddingLeft="5dp"
+                            android:text="Mystery"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/tanggal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/genre3"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="15dp"
+                        android:buttonTint="@color/blue"
+                        android:fontFamily="@font/orkney_light"
+                        android:hint="Masukkan Tanggal Terbit"
+                        android:inputType="date"
+                        android:textColorHint="@color/black"
+                        android:textSize="16sp" />
+
+
+                    <EditText
+                        android:id="@+id/pemeran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tanggal"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/orkney_light"
+                        android:hint="Masukkan Nama Penulis"
+                        android:inputType="text"
+                        android:textColorHint="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textrating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pemeran"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/orkney_bold"
+                        android:text="Rating"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textrating"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="25dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/ratingvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="17dp"
+                            android:fontFamily="@font/orkney_light"
+                            android:text="10"
+                            android:textSize="16sp" />
+
+                        <SeekBar
+                            android:id="@+id/seekBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:progressTint="@color/dark_blue"
+                            android:thumbTint="@color/blue" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvback"
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/back" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="660dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/blue"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="15dp"
+        android:text="Daftar"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</RelativeLayout>
